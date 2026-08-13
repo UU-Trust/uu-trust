@@ -15,7 +15,7 @@
       --muted: #b8b8b8;
       --line: #292929;
       --link: #ffffff;
-      --max-width: 900px;
+      --max-width: 880px;
     }
 
     * {
@@ -32,61 +32,61 @@
       background: var(--background);
       color: var(--text);
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 17px;
-      line-height: 1.75;
+      font-size: 16px;
+      line-height: 1.6;
     }
 
     main {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 70px 28px 90px;
+      padding: 55px 28px 70px;
     }
 
     header {
-      margin-bottom: 95px;
+      margin-bottom: 65px;
     }
 
     h1 {
-      margin: 0 0 30px;
-      font-size: clamp(2.2rem, 6vw, 4rem);
-      line-height: 1.08;
+      margin: 0 0 22px;
+      font-size: clamp(2rem, 5vw, 2.7rem);
+      line-height: 1.1;
       font-weight: 500;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.025em;
     }
 
     h2 {
-      margin: 95px 0 35px;
-      font-size: clamp(1.65rem, 4vw, 2.35rem);
+      margin: 65px 0 22px;
+      font-size: clamp(1.55rem, 3vw, 1.9rem);
       line-height: 1.2;
       font-weight: 500;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.015em;
     }
 
     h3 {
-      margin: 55px 0 22px;
-      font-size: 1.25rem;
+      margin: 38px 0 16px;
+      font-size: 1.1rem;
       line-height: 1.35;
       font-weight: 500;
     }
 
     h4 {
-      margin: 42px 0 18px;
-      font-size: 1.05rem;
-      line-height: 1.4;
+      margin: 30px 0 14px;
+      font-size: 1rem;
+      line-height: 1.35;
       font-weight: 500;
     }
 
     p {
-      margin: 0 0 28px;
+      margin: 0 0 20px;
     }
 
     ul {
-      margin: 25px 0 35px;
-      padding-left: 25px;
+      margin: 18px 0 25px;
+      padding-left: 23px;
     }
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     strong {
@@ -101,7 +101,7 @@
       color: var(--link);
       text-decoration: underline;
       text-decoration-thickness: 1px;
-      text-underline-offset: 4px;
+      text-underline-offset: 3px;
       transition: opacity 0.2s ease;
     }
 
@@ -109,34 +109,30 @@
       opacity: 0.65;
     }
 
-    .intro {
-      margin-bottom: 50px;
-    }
-
     .subtitle {
-      font-size: clamp(1.35rem, 3vw, 1.8rem);
+      font-size: clamp(1.2rem, 2.5vw, 1.4rem);
       line-height: 1.35;
-      margin-bottom: 45px;
+      margin-bottom: 30px;
     }
 
     .question {
-      margin-top: 55px;
-      margin-bottom: 28px;
+      margin-top: 35px;
+      margin-bottom: 18px;
     }
 
     .statement {
-      margin: 40px 0;
+      margin: 28px 0;
     }
 
     .cta {
       display: inline-block;
-      margin: 18px 0 30px;
-      padding: 12px 22px;
+      margin: 10px 0 20px;
+      padding: 10px 19px;
       border: 1px solid #ffffff;
       color: #ffffff;
       text-decoration: none;
-      font-size: 1rem;
-      letter-spacing: 0.03em;
+      font-size: 0.95rem;
+      letter-spacing: 0.025em;
       transition: background 0.2s ease, color 0.2s ease;
     }
 
@@ -147,87 +143,84 @@
     }
 
     .counter {
-      margin: 28px 0 45px;
+      margin: 22px 0 30px;
     }
 
     .counter-label {
-      margin-bottom: 6px;
-      font-size: 0.95rem;
+      margin-bottom: 3px;
+      font-size: 0.85rem;
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
 
     .counter-number {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      line-height: 1.15;
-      margin-bottom: 30px;
-    }
-
-    .divider {
-      height: 1px;
-      background: var(--line);
-      margin: 90px 0;
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin-bottom: 22px;
     }
 
     .contact-block {
-      margin-top: 45px;
+      margin-top: 30px;
     }
 
     .footer {
-      margin-top: 100px;
-      padding-top: 45px;
+      margin-top: 75px;
+      padding-top: 35px;
       border-top: 1px solid var(--line);
       text-align: center;
     }
 
     .footer-title {
-      font-size: 1.15rem;
-      margin-bottom: 22px;
+      font-size: 1.05rem;
+      margin-bottom: 18px;
     }
 
     .footer-tagline {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .copyright {
-      margin-top: 35px;
+      margin-top: 28px;
       color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .small-note {
-      color: var(--muted);
+      font-size: 0.85rem;
     }
 
     @media (max-width: 600px) {
       body {
         font-size: 16px;
-        line-height: 1.7;
+        line-height: 1.58;
       }
 
       main {
-        padding: 45px 20px 65px;
+        padding: 40px 20px 55px;
       }
 
       header {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
       }
 
       h2 {
-        margin-top: 75px;
+        margin-top: 55px;
       }
 
       h3 {
-        margin-top: 45px;
+        margin-top: 30px;
       }
 
-      .divider {
-        margin: 70px 0;
+      h4 {
+        margin-top: 25px;
       }
 
-      .cta {
-        display: inline-block;
-        width: auto;
+      .question {
+        margin-top: 28px;
+      }
+
+      .counter-number {
+        font-size: 1.6rem;
+      }
+
+      .footer {
+        margin-top: 60px;
       }
     }
   </style>
@@ -344,7 +337,10 @@
       If UU already resonates with you and you want to help us build it:
     </p>
 
-    <a class="cta" href="https://donatr.ee/unitingusers" target="_blank" rel="noopener">
+    <a class="cta"
+       href="https://donatr.ee/unitingusers"
+       target="_blank"
+       rel="noopener">
       SUPPORT OUR WORK
     </a>
   </section>
@@ -395,7 +391,9 @@
     <h3><em>WATCH THE UU HUMAN-ORIGIN CHANNEL</em></h3>
 
     <p>
-      <a href="https://www.youtube.com/@UUHumanOrigin" target="_blank" rel="noopener">
+      <a href="https://www.youtube.com/@UUHumanOrigin"
+         target="_blank"
+         rel="noopener">
         @UUHumanOrigin
       </a>
     </p>
@@ -417,7 +415,9 @@
     <h3><em>PRE-ORDER THE BOOK</em></h3>
 
     <p>
-      <a href="https://www.amazon.com/dp/B0HDQ8FM78" target="_blank" rel="noopener">
+      <a href="https://www.amazon.com/dp/B0HDQ8FM78"
+         target="_blank"
+         rel="noopener">
         Noteworthy Namelessness, Leading from Above — Pre-order here
       </a>
     </p>
@@ -438,7 +438,9 @@
     <h3><em>SUBSCRIBE</em></h3>
 
     <p>
-      <a href="https://uumission.substack.com" target="_blank" rel="noopener">
+      <a href="https://uumission.substack.com"
+         target="_blank"
+         rel="noopener">
         UU Mission Updates on Substack
       </a>
     </p>
@@ -452,14 +454,24 @@
 
     <h3><em>Help Us Build the Foundation</em></h3>
 
-    <h4><em>FOUNDING SUPPORTERS</em></h4>
-
     <div class="counter">
-      <div class="counter-label"><em>FOUNDING SUPPORTERS</em></div>
-      <div class="counter-number"><em>0 / 1,000,000</em></div>
 
-      <div class="counter-label"><em>UU OGs</em></div>
-      <div class="counter-number"><em>0 / 10,000</em></div>
+      <div class="counter-label">
+        <em>FOUNDING SUPPORTERS</em>
+      </div>
+
+      <div class="counter-number">
+        <em>0 / 1,000,000</em>
+      </div>
+
+      <div class="counter-label">
+        <em>UU OGs</em>
+      </div>
+
+      <div class="counter-number">
+        <em>0 / 10,000</em>
+      </div>
+
     </div>
 
     <p>
@@ -471,7 +483,10 @@
       If our work resonates with you and you would like to contribute:
     </p>
 
-    <a class="cta" href="https://donatr.ee/unitingusers" target="_blank" rel="noopener">
+    <a class="cta"
+       href="https://donatr.ee/unitingusers"
+       target="_blank"
+       rel="noopener">
       SUPPORT UU
     </a>
   </section>
@@ -585,7 +600,9 @@
     </p>
 
     <p>
-      <a href="https://uu-protocol.org" target="_blank" rel="noopener">
+      <a href="https://uu-protocol.org"
+         target="_blank"
+         rel="noopener">
         uu-protocol.org
       </a>
     </p>
@@ -598,7 +615,9 @@
     </p>
 
     <p>
-      <a href="https://uuprotocol.substack.com" target="_blank" rel="noopener">
+      <a href="https://uuprotocol.substack.com"
+         target="_blank"
+         rel="noopener">
         uuprotocol.substack.com
       </a>
     </p>
@@ -615,7 +634,9 @@
     </p>
 
     <p>
-      <a href="https://linksuu.org" target="_blank" rel="noopener">
+      <a href="https://linksuu.org"
+         target="_blank"
+         rel="noopener">
         linksuu.org
       </a>
     </p>
