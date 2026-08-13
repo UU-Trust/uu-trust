@@ -6,16 +6,15 @@
 
   <title>Uniting Users (UU) | Human-Origin Infrastructure</title>
 
-  <meta name="description" content="Uniting Users (UU) — Human-Origin Infrastructure designed to preserve human agency through privacy-preserving, permissionless and neutral infrastructure for the public.">
+  <meta name="description" content="Uniting Users (UU) — Human-Origin Infrastructure. Privacy-preserving, permissionless, neutral and public-interest infrastructure for the people.">
 
   <style>
     :root {
       --background: #000000;
       --text: #ffffff;
-      --muted: #b8b8b8;
-      --line: #292929;
-      --link: #ffffff;
-      --max-width: 880px;
+      --muted: #b5b5b5;
+      --line: #2a2a2a;
+      --max-width: 820px;
     }
 
     * {
@@ -33,75 +32,98 @@
       color: var(--text);
       font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.62;
+      font-weight: 400;
     }
 
     main {
+      width: 100%;
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 55px 28px 70px;
+      padding: 52px 28px 70px;
     }
 
-    header {
-      margin-bottom: 65px;
+    /* INTRO */
+
+    .site-header {
+      padding-bottom: 58px;
     }
 
-    h1 {
-      margin: 0 0 22px;
-      font-size: clamp(2rem, 5vw, 2.7rem);
-      line-height: 1.1;
-      font-weight: 500;
-      letter-spacing: -0.025em;
+    .site-title {
+      margin: 0 0 16px;
+      font-size: 38px;
+      line-height: 1.12;
+      font-weight: 400;
+      letter-spacing: -0.02em;
     }
 
-    h2 {
-      margin: 65px 0 22px;
-      font-size: clamp(1.55rem, 3vw, 1.9rem);
-      line-height: 1.2;
-      font-weight: 500;
-      letter-spacing: -0.015em;
+    .site-subtitle {
+      margin: 0 0 30px;
+      font-size: 19px;
+      line-height: 1.4;
+      font-weight: 400;
     }
 
-    h3 {
-      margin: 38px 0 16px;
-      font-size: 1.1rem;
-      line-height: 1.35;
-      font-weight: 500;
+    /* MAJOR SECTIONS */
+
+    section {
+      border-top: 1px solid var(--line);
+      padding-top: 32px;
+      margin-top: 58px;
     }
 
-    h4 {
-      margin: 30px 0 14px;
-      font-size: 1rem;
-      line-height: 1.35;
-      font-weight: 500;
+    section:first-of-type {
+      margin-top: 0;
     }
+
+    .section-title {
+      margin: 0 0 25px;
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    /* TEXT */
 
     p {
-      margin: 0 0 20px;
+      margin: 0 0 18px;
     }
 
-    ul {
-      margin: 18px 0 25px;
-      padding-left: 23px;
+    .subheading {
+      margin: 30px 0 14px;
+      font-size: 17px;
+      line-height: 1.4;
+      font-weight: 400;
     }
 
-    li {
-      margin-bottom: 6px;
-    }
-
-    strong {
-      font-weight: 600;
+    .intro-question {
+      margin: 30px 0 14px;
+      font-size: 17px;
+      line-height: 1.4;
+      font-weight: 400;
     }
 
     em {
       font-style: italic;
     }
 
+    ul {
+      margin: 12px 0 22px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    /* LINKS */
+
     a {
-      color: var(--link);
+      color: var(--text);
       text-decoration: underline;
       text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
+      text-underline-offset: 4px;
       transition: opacity 0.2s ease;
     }
 
@@ -109,117 +131,124 @@
       opacity: 0.65;
     }
 
-    .subtitle {
-      font-size: clamp(1.2rem, 2.5vw, 1.4rem);
-      line-height: 1.35;
-      margin-bottom: 30px;
-    }
+    /* SUPPORT LINKS */
 
-    .question {
-      margin-top: 35px;
-      margin-bottom: 18px;
-    }
-
-    .statement {
-      margin: 28px 0;
-    }
-
-    .cta {
+    .support-link {
       display: inline-block;
-      margin: 10px 0 20px;
-      padding: 10px 19px;
+      margin: 4px 0 12px;
+      padding: 9px 17px;
       border: 1px solid #ffffff;
-      color: #ffffff;
       text-decoration: none;
-      font-size: 0.95rem;
-      letter-spacing: 0.025em;
+      font-size: 15px;
+      line-height: 1.3;
       transition: background 0.2s ease, color 0.2s ease;
     }
 
-    .cta:hover {
+    .support-link:hover {
       background: #ffffff;
       color: #000000;
       opacity: 1;
     }
 
-    .counter {
-      margin: 22px 0 30px;
+    /* FOUNDING SUPPORTER COUNTERS */
+
+    .supporter-stats {
+      margin: 26px 0 28px;
     }
 
-    .counter-label {
+    .stat {
+      margin-bottom: 20px;
+    }
+
+    .stat-label {
       margin-bottom: 3px;
-      font-size: 0.85rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 1.35;
+      letter-spacing: 0.03em;
     }
 
-    .counter-number {
-      font-size: 1.75rem;
-      line-height: 1.2;
-      margin-bottom: 22px;
+    .stat-number {
+      font-size: 21px;
+      line-height: 1.3;
+      font-weight: 400;
     }
 
-    .contact-block {
-      margin-top: 30px;
-    }
+    /* FOOTER */
 
-    .footer {
+    footer {
       margin-top: 75px;
-      padding-top: 35px;
+      padding-top: 32px;
       border-top: 1px solid var(--line);
       text-align: center;
     }
 
     .footer-title {
-      font-size: 1.05rem;
-      margin-bottom: 18px;
+      margin: 0 0 9px;
+      font-size: 17px;
+      line-height: 1.4;
+      font-weight: 600;
     }
 
-    .footer-tagline {
-      margin-bottom: 8px;
+    .footer-subtitle {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--text);
     }
 
     .copyright {
       margin-top: 28px;
+      font-size: 13px;
+      line-height: 1.4;
       color: var(--muted);
-      font-size: 0.85rem;
     }
 
+    /* MOBILE */
+
     @media (max-width: 600px) {
+
       body {
         font-size: 16px;
-        line-height: 1.58;
+        line-height: 1.6;
       }
 
       main {
-        padding: 40px 20px 55px;
+        padding: 38px 20px 55px;
       }
 
-      header {
-        margin-bottom: 50px;
+      .site-header {
+        padding-bottom: 45px;
       }
 
-      h2 {
-        margin-top: 55px;
+      .site-title {
+        font-size: 34px;
       }
 
-      h3 {
-        margin-top: 30px;
+      .site-subtitle {
+        font-size: 18px;
+        margin-bottom: 26px;
       }
 
-      h4 {
-        margin-top: 25px;
+      section {
+        margin-top: 48px;
+        padding-top: 27px;
       }
 
-      .question {
-        margin-top: 28px;
+      .section-title {
+        font-size: 22px;
+        margin-bottom: 21px;
       }
 
-      .counter-number {
-        font-size: 1.6rem;
+      .subheading,
+      .intro-question {
+        font-size: 17px;
       }
 
-      .footer {
+      .stat-number {
+        font-size: 20px;
+      }
+
+      footer {
         margin-top: 60px;
       }
     }
@@ -230,14 +259,15 @@
 
 <main>
 
-  <!-- INTRODUCTION -->
+  <!-- UU INTRO -->
 
-  <header>
-    <h1>UNITING USERS (UU)</h1>
+  <header class="site-header">
 
-    <div class="subtitle">
+    <h1 class="site-title">Uniting Users (UU)</h1>
+
+    <p class="site-subtitle">
       <em>Human-Origin Infrastructure to Preserve Human Agency</em>
-    </div>
+    </p>
 
     <p>
       The internet was built for people. As artificial intelligence, automation,
@@ -247,9 +277,9 @@
       surrender their identity, personal data or privacy.
     </p>
 
-    <h3 class="question">
+    <p class="intro-question">
       <em>What do we mean by Human-Origin Infrastructure?</em>
-    </h3>
+    </p>
 
     <p>
       A new, privacy-preserving, permissionless and neutral infrastructure layer
@@ -258,9 +288,9 @@
       architecture or the need to store personal information.
     </p>
 
-    <h3 class="question">
+    <p class="intro-question">
       <em>Why bring UU into the public when it is not yet built?</em>
-    </h3>
+    </p>
 
     <p>
       The objective is simple — to create an infrastructure that can support a
@@ -271,32 +301,35 @@
     <p>
       UU is designed around principles that are intentionally difficult to
       compromise, solely with the purpose of serving the public, as
-      <strong>public-interest infrastructure to help distinguish human-origin
-      content, information and participation from synthetic ones.</strong>
-      A complementary and neutral layer for the internet that can co-exist with
-      platforms and existing digital ecosystems.
+      public-interest infrastructure to help distinguish human-origin content,
+      information and participation from synthetic ones. A complementary and
+      neutral layer for the internet that can co-exist with platforms and
+      existing digital ecosystems.
     </p>
 
     <p>
       The goal is to build UU with people, without shareholder benefits or
       ownership by a single company.
     </p>
+
   </header>
 
 
-  <!-- MISSION -->
+  <!-- JOIN THE UU MISSION -->
 
   <section>
-    <h2>JOIN THE UU MISSION</h2>
 
-    <h2><em>Inviting People to Build UU Together</em></h2>
+    <h2 class="section-title">Join the UU Mission</h2>
+
+    <p class="subheading">
+      <em>Inviting People to Build UU Together</em>
+    </p>
 
     <p>
       The idea is that an infrastructure for proving human origin should belong
       to the people, not to a select few — built with transparency, no ownership
       and neutrality. That is the reason to start the UU Mission and to invite
-      people <strong>to create public-interest infrastructure for the public —
-      together.</strong>
+      people to create public-interest infrastructure for the public — together.
     </p>
 
     <p>
@@ -304,28 +337,27 @@
       Human-Origin Infrastructure may need to exist. Whether you decide to
       support our work, share UU and help build awareness, follow our journey,
       contribute connections or expertise, or buy us a coffee — all contributions
-      are much appreciated!
+      are much appreciated.
     </p>
 
-    <h3>
+    <p class="subheading">
       <em>The First UU OGs &amp; One Million Founding Supporters</em>
-    </h3>
-
-    <p>
-      <strong>Founding Supporters of an infrastructure built for the public.</strong>
     </p>
 
     <p>
-      The first <strong>10,000 people who stand behind the mission</strong> will
-      become the <strong>First UU OGs</strong> — the earliest people who believed
-      that this infrastructure was worth helping to build.
+      Founding Supporters of an infrastructure built for the public.
     </p>
 
     <p>
-      Our long-term goal is to build a community of
-      <strong>1,000,000 Founding Supporters</strong> — because we calculated that
-      1 million coffee invites (donations) can help make this infrastructure
-      available.
+      The first 10,000 people who stand behind the mission will become the
+      First UU OGs — the earliest people who believed that this infrastructure
+      was worth helping to build.
+    </p>
+
+    <p>
+      Our long-term goal is to build a community of 1,000,000 Founding Supporters
+      — because we calculated that 1 million coffee invites (donations) can help
+      make this infrastructure available.
     </p>
 
     <p>
@@ -337,19 +369,21 @@
       If UU already resonates with you and you want to help us build it:
     </p>
 
-    <a class="cta"
+    <a class="support-link"
        href="https://donatr.ee/unitingusers"
        target="_blank"
        rel="noopener">
-      SUPPORT OUR WORK
+      Support Our Work
     </a>
+
   </section>
 
 
-  <!-- LEARN MORE -->
+  <!-- LEARN MORE ABOUT UU -->
 
   <section>
-    <h2>LEARN MORE ABOUT &amp; GET TO KNOW UU</h2>
+
+    <h2 class="section-title">Learn More About UU</h2>
 
     <p>
       UU is a new concept, and we believe people should have the opportunity to
@@ -358,7 +392,7 @@
 
     <p>
       Our YouTube channel is being built as an open introduction to UU and the
-      thinking behind it. Through a series of <strong>UU Founder Monologues</strong>,
+      thinking behind it. Through a series of UU Founder Monologues,
       explanations, progress updates and deeper discussions, we will explore:
     </p>
 
@@ -379,8 +413,8 @@
       initiative is simple:
     </p>
 
-    <p class="statement">
-      <strong>Transparency before commitment. Understanding before participation.</strong>
+    <p>
+      <em>Transparency before commitment. Understanding before participation.</em>
     </p>
 
     <p>
@@ -388,7 +422,9 @@
       invite you to support the progress and build it with us.
     </p>
 
-    <h3><em>WATCH THE UU HUMAN-ORIGIN CHANNEL</em></h3>
+    <p class="subheading">
+      <em>UU Human-Origin Channel</em>
+    </p>
 
     <p>
       <a href="https://www.youtube.com/@UUHumanOrigin"
@@ -397,13 +433,15 @@
         @UUHumanOrigin
       </a>
     </p>
+
   </section>
 
 
-  <!-- BOOK -->
+  <!-- READ THE STORY OF UU -->
 
   <section>
-    <h3><em>READ THE STORY OF UU'S ORIGINS</em></h3>
+
+    <h2 class="section-title">Read the Story of UU</h2>
 
     <p>
       UU did not appear overnight. The current protocol emerged from years of
@@ -412,30 +450,36 @@
       and experiences that ultimately led toward UU — is being documented in a book.
     </p>
 
-    <h3><em>PRE-ORDER THE BOOK</em></h3>
+    <p class="subheading">
+      <em>Noteworthy Namelessness, Leading from Above</em>
+    </p>
 
     <p>
       <a href="https://www.amazon.com/dp/B0HDQ8FM78"
          target="_blank"
          rel="noopener">
-        Noteworthy Namelessness, Leading from Above — Pre-order here
+        Pre-order here
       </a>
     </p>
+
   </section>
 
 
-  <!-- NEWSLETTER -->
+  <!-- UU MISSION UPDATES -->
 
   <section>
-    <h2>STAY CONNECTED — UU MISSION UPDATES</h2>
+
+    <h2 class="section-title">UU Mission Updates</h2>
 
     <p>
-      The UU Mission is being built in public. Subscribe to
-      <strong>UU Mission Updates</strong> for progress updates every two weeks,
-      announcements, milestones and important developments as the journey unfolds.
+      The UU Mission is being built in public. Subscribe to UU Mission Updates
+      for progress updates every two weeks, announcements, milestones and
+      important developments as the journey unfolds.
     </p>
 
-    <h3><em>SUBSCRIBE</em></h3>
+    <p class="subheading">
+      <em>Subscribe</em>
+    </p>
 
     <p>
       <a href="https://uumission.substack.com"
@@ -444,32 +488,30 @@
         UU Mission Updates on Substack
       </a>
     </p>
+
   </section>
 
 
   <!-- FOUNDING SUPPORTER JOURNEY -->
 
   <section>
-    <h2>THE FOUNDING SUPPORTER JOURNEY</h2>
 
-    <h3><em>Help Us Build the Foundation</em></h3>
+    <h2 class="section-title">The Founding Supporter Journey</h2>
 
-    <div class="counter">
+    <p class="subheading">
+      <em>Help Us Build the Foundation</em>
+    </p>
 
-      <div class="counter-label">
-        <em>FOUNDING SUPPORTERS</em>
+    <div class="supporter-stats">
+
+      <div class="stat">
+        <div class="stat-label">Founding Supporters</div>
+        <div class="stat-number">0 / 1,000,000</div>
       </div>
 
-      <div class="counter-number">
-        <em>0 / 1,000,000</em>
-      </div>
-
-      <div class="counter-label">
-        <em>UU OGs</em>
-      </div>
-
-      <div class="counter-number">
-        <em>0 / 10,000</em>
+      <div class="stat">
+        <div class="stat-label">UU OGs</div>
+        <div class="stat-number">0 / 10,000</div>
       </div>
 
     </div>
@@ -483,19 +525,23 @@
       If our work resonates with you and you would like to contribute:
     </p>
 
-    <a class="cta"
+    <a class="support-link"
        href="https://donatr.ee/unitingusers"
        target="_blank"
        rel="noopener">
-      SUPPORT UU
+      Support UU
     </a>
+
   </section>
 
 
   <!-- PHILANTHROPIC CONTRIBUTIONS -->
 
   <section>
-    <h2>PHILANTHROPIC AND MISSION-ALIGNED CONTRIBUTIONS</h2>
+
+    <h2 class="section-title">
+      Philanthropic &amp; Mission-Aligned Contributions
+    </h2>
 
     <p>
       <em>
@@ -513,8 +559,8 @@
     <p>
       If you believe Human-Origin Infrastructure should exist — and want to help
       accelerate its development, earlier market entry and global deployment —
-      we welcome conversations with
-      <strong>mission-aligned philanthropic and conviction-capital contributors.</strong>
+      we welcome conversations with mission-aligned philanthropic and
+      conviction-capital contributors.
     </p>
 
     <p>
@@ -527,13 +573,15 @@
         founder@uu-trust.org
       </a>
     </p>
+
   </section>
 
 
-  <!-- CONTACT -->
+  <!-- CONTACT & COMMUNITY -->
 
   <section>
-    <h2>CONTACT &amp; COMMUNITY REACH</h2>
+
+    <h2 class="section-title">Contact &amp; Community</h2>
 
     <p>
       As UU is still in the process of being built, we welcome respectful
@@ -541,10 +589,13 @@
     </p>
 
     <p>
-      <strong>Founding Supporter questions and queries are welcome.</strong>
+      Founding Supporter questions and queries are welcome, as are friendly
+      conversations with people interested in the mission.
     </p>
 
-    <h3><em>FOLLOW THE JOURNEY</em></h3>
+    <p class="subheading">
+      <em>Follow the Journey</em>
+    </p>
 
     <p>
       For announcements, progress and updates:
@@ -565,19 +616,23 @@
         Telegram — Uniting Users
       </a>
     </p>
+
   </section>
 
 
   <!-- PRIOR R&D -->
 
   <section>
-    <h2>PRIOR R&amp;D, RESEARCH &amp; THE UU PROTOCOL</h2>
+
+    <h2 class="section-title">
+      Prior R&amp;D, Research &amp; the UU Protocol
+    </h2>
 
     <p>
       UU is the result of an extensive period of research, development and
-      experimentation. Between <strong>2018 and 2025</strong>, prior R&amp;D was
-      conducted under <strong>LinksUU Technology Solutions Ltd, UK</strong>,
-      across multiple projects, approaches and architectural pivots.
+      experimentation. Between 2018 and 2025, prior R&amp;D was conducted under
+      LinksUU Technology Solutions Ltd, UK, across multiple projects, approaches
+      and architectural pivots.
     </p>
 
     <p>
@@ -586,14 +641,16 @@
     </p>
 
     <p>
-      UU Protocol formally launched as a protocol direction in <strong>2026</strong>.
+      UU Protocol formally launched as a protocol direction in 2026.
     </p>
 
     <p>
       The prior R&amp;D remains part of the history of how UU came to exist.
     </p>
 
-    <h3><em>UU PROTOCOL</em></h3>
+    <p class="subheading">
+      <em>UU Protocol</em>
+    </p>
 
     <p>
       The current protocol direction, architecture and protocol materials:
@@ -607,7 +664,9 @@
       </a>
     </p>
 
-    <h3><em>RESEARCH &amp; TECHNICAL WRITING</em></h3>
+    <p class="subheading">
+      <em>Research &amp; Technical Writing</em>
+    </p>
 
     <p>
       Research, technical thinking and the continuing development of the
@@ -622,10 +681,12 @@
       </a>
     </p>
 
-    <h3><em>PRIOR R&amp;D</em></h3>
+    <p class="subheading">
+      <em>Prior R&amp;D</em>
+    </p>
 
     <p>
-      <strong>LinksUU Technology Solutions Ltd, UK</strong>
+      LinksUU Technology Solutions Ltd, UK
     </p>
 
     <p>
@@ -640,28 +701,25 @@
         linksuu.org
       </a>
     </p>
+
   </section>
 
 
   <!-- FOOTER -->
 
-  <footer class="footer">
+  <footer>
 
-    <div class="footer-title">
-      <strong>UU | Human-Origin Infrastructure</strong>
-    </div>
-
-    <p class="footer-tagline">
-      <strong>Privacy-preserving. Permissionless. Neutral. Public-interest.</strong>
+    <p class="footer-title">
+      UU | Human-Origin Infrastructure
     </p>
 
-    <p>
-      <strong>Built with the people. Built for the public.</strong>
+    <p class="footer-subtitle">
+      <em>Privacy-preserving. Permissionless. Neutral. Public-interest. For the people.</em>
     </p>
 
-    <div class="copyright">
+    <p class="copyright">
       &copy; 2026 Uniting Users (UU)
-    </div>
+    </p>
 
   </footer>
 
