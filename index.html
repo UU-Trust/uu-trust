@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
 
-  <title>Uniting Users (UU) | Human-Origin Infrastructure</title>
-
-  <meta name="description" content="Uniting Users (UU) — Human-Origin Infrastructure. Privacy-preserving, permissionless, neutral and public-interest infrastructure for the people.">
+  <title>Uniting Users (UU) | Human-Origin Infrastructure for the People</title>
+  <meta name="description" content="Uniting Users (UU) is a public-interest initiative working to build neutral, permissionless Human-Origin Infrastructure to help distinguish human-origin participation on the internet while preserving human agency and privacy.">
 
   <style>
     :root {
@@ -17,12 +18,11 @@
       --max-width: 820px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 24px;
     }
 
     body {
@@ -43,11 +43,7 @@
       padding: 52px 28px 70px;
     }
 
-    /* INTRO */
-
-    .site-header {
-      padding-bottom: 58px;
-    }
+    .site-header { padding-bottom: 58px; }
 
     .site-title {
       margin: 0 0 16px;
@@ -64,16 +60,15 @@
       font-weight: 400;
     }
 
-    /* MAJOR SECTIONS */
+    .tagline {
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
 
     section {
       border-top: 1px solid var(--line);
       padding-top: 32px;
       margin-top: 58px;
-    }
-
-    section:first-of-type {
-      margin-top: 0;
     }
 
     .section-title {
@@ -84,19 +79,9 @@
       letter-spacing: -0.01em;
     }
 
-    /* TEXT */
+    p { margin: 0 0 18px; }
 
-    p {
-      margin: 0 0 18px;
-    }
-
-    .subheading {
-      margin: 30px 0 14px;
-      font-size: 17px;
-      line-height: 1.4;
-      font-weight: 400;
-    }
-
+    .subheading,
     .intro-question {
       margin: 30px 0 14px;
       font-size: 17px;
@@ -104,34 +89,44 @@
       font-weight: 400;
     }
 
-    em {
-      font-style: italic;
+    h3 {
+      margin: 30px 0 14px;
+      font-size: 18px;
+      line-height: 1.4;
+      font-weight: 600;
     }
+
+    em { font-style: italic; }
 
     ul {
       margin: 12px 0 22px;
       padding-left: 22px;
     }
 
-    li {
-      margin-bottom: 5px;
-    }
-
-    /* LINKS */
+    li { margin-bottom: 7px; }
 
     a {
       color: var(--text);
       text-decoration: underline;
       text-decoration-thickness: 1px;
       text-underline-offset: 4px;
+      overflow-wrap: anywhere;
       transition: opacity 0.2s ease;
     }
 
-    a:hover {
-      opacity: 0.65;
+    a:hover { opacity: 0.65; }
+
+    a:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 4px;
     }
 
-    /* SUPPORT LINKS */
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin: 22px 0;
+    }
 
     .support-link {
       display: inline-block;
@@ -150,15 +145,9 @@
       opacity: 1;
     }
 
-    /* FOUNDING SUPPORTER COUNTERS */
+    .supporter-stats { margin: 26px 0 28px; }
 
-    .supporter-stats {
-      margin: 26px 0 28px;
-    }
-
-    .stat {
-      margin-bottom: 20px;
-    }
+    .stat { margin-bottom: 20px; }
 
     .stat-label {
       margin-bottom: 3px;
@@ -173,7 +162,29 @@
       font-weight: 400;
     }
 
-    /* FOOTER */
+    .video-placeholder {
+      border: 1px solid var(--line);
+      padding: 26px 22px;
+      margin: 18px 0 24px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .video-placeholder strong {
+      display: block;
+      color: var(--text);
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .small-note {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .prior-work {
+      margin-top: 72px;
+    }
 
     footer {
       margin-top: 75px;
@@ -203,26 +214,14 @@
       color: var(--muted);
     }
 
-    /* MOBILE */
-
     @media (max-width: 600px) {
+      body { font-size: 16px; line-height: 1.6; }
 
-      body {
-        font-size: 16px;
-        line-height: 1.6;
-      }
+      main { padding: 38px 20px 55px; }
 
-      main {
-        padding: 38px 20px 55px;
-      }
+      .site-header { padding-bottom: 45px; }
 
-      .site-header {
-        padding-bottom: 45px;
-      }
-
-      .site-title {
-        font-size: 34px;
-      }
+      .site-title { font-size: 34px; }
 
       .site-subtitle {
         font-size: 18px;
@@ -240,487 +239,487 @@
       }
 
       .subheading,
-      .intro-question {
-        font-size: 17px;
-      }
+      .intro-question { font-size: 17px; }
 
-      .stat-number {
-        font-size: 20px;
-      }
+      .stat-number { font-size: 20px; }
 
-      footer {
-        margin-top: 60px;
-      }
+      footer { margin-top: 60px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
     }
   </style>
 </head>
 
 <body>
-
 <main>
 
-  <!-- UU INTRO -->
-
-  <header class="site-header">
-
+  <!-- INTRODUCTION -->
+  <header class="site-header" id="top">
     <h1 class="site-title">Uniting Users (UU)</h1>
-
-    <p class="site-subtitle">
-      <em>Human-Origin Infrastructure to Preserve Human Agency</em>
-    </p>
+    <p class="site-subtitle"><em>Human-Origin Infrastructure to Preserve Human Agency</em></p>
+    <p class="tagline">Human-Origin Infrastructure for the People.</p>
 
     <p>
       The internet was built for people. As artificial intelligence, automation,
       bots and synthetic identities become increasingly capable of acting like
-      people, the internet needs a new kind of infrastructure — one that can
-      recognize authentic human-origin participation without requiring people to
-      surrender their identity, personal data or privacy.
+      people, the internet faces a fundamental challenge: how can we distinguish
+      human-origin participation from machine-generated activity without asking
+      people to surrender their identity, personal data or privacy?
     </p>
 
-    <p class="intro-question">
-      <em>What do we mean by Human-Origin Infrastructure?</em>
+    <p>
+      Uniting Users (UU) is a public-interest initiative working to build
+      Human-Origin Infrastructure: a neutral, permissionless infrastructure layer
+      designed to help digital systems distinguish human-origin participation
+      on the internet.
     </p>
 
+    <p>
+      Our ambition is to bring a new layer of trust to the digital world while
+      preserving human agency, privacy and freedom. UU is designed to complement
+      the platforms, communities and digital ecosystems people already use—not
+      replace them.
+    </p>
+
+    <p>
+      A more trustworthy internet should be possible without giving up the
+      principles that made the internet valuable in the first place.
+    </p>
+
+    <p class="intro-question"><em>What do we mean by Human-Origin Infrastructure?</em></p>
     <p>
       A new, privacy-preserving, permissionless and neutral infrastructure layer
-      designed to enable systems to recognize authentic human-origin participation
-      — without centralized identity custody, biometric databases, surveillance
-      architecture or the need to store personal information.
+      intended to help systems distinguish human-origin participation without
+      centralized identity custody, biometric databases or surveillance
+      architecture.
     </p>
 
-    <p class="intro-question">
-      <em>Why bring UU into the public when it is not yet built?</em>
-    </p>
-
+    <p class="intro-question"><em>Why bring UU into the public when it is not yet built?</em></p>
     <p>
-      The objective is simple — to create an infrastructure that can support a
-      more trustworthy digital environment for people while preserving the
-      freedom, privacy and neutrality that the internet was built upon.
+      The objective is to create infrastructure that can support a more
+      trustworthy digital environment for people while preserving the freedom,
+      privacy and neutrality that the internet was built upon.
     </p>
-
     <p>
-      UU is designed around principles that are intentionally difficult to
-      compromise, solely with the purpose of serving the public, as
-      public-interest infrastructure to help distinguish human-origin content,
-      information and participation from synthetic ones. A complementary and
-      neutral layer for the internet that can co-exist with platforms and
-      existing digital ecosystems.
+      UU is being developed as a complementary and neutral layer for the internet
+      that can coexist with platforms and existing digital ecosystems. Its
+      long-term purpose is to serve the public, rather than be owned or controlled
+      by a single company.
     </p>
 
-    <p>
-      The goal is to build UU with people, without shareholder benefits or
-      ownership by a single company.
-    </p>
-
+    <div class="link-row">
+      <a href="https://www.youtube.com/@UUHumanOrigin" target="_blank" rel="noopener noreferrer">Watch UU on YouTube</a>
+      <a href="https://uumission.substack.com/" target="_blank" rel="noopener noreferrer">Read UU Mission Updates</a>
+      <a href="https://oneofthe1m.com/" target="_blank" rel="noopener noreferrer">Join One of the 1M</a>
+    </div>
   </header>
 
-
-  <!-- JOIN THE UU MISSION -->
-
-  <section>
-
-    <h2 class="section-title">Join the UU Mission</h2>
-
-    <p class="subheading">
-      <em>Inviting People to Build UU Together</em>
-    </p>
+  <!-- WHY HUMAN-ORIGIN INFRASTRUCTURE -->
+  <section id="why">
+    <h2 class="section-title">Why Human-Origin Infrastructure?</h2>
 
     <p>
-      The idea is that an infrastructure for proving human origin should belong
-      to the people, not to a select few — built with transparency, no ownership
-      and neutrality. That is the reason to start the UU Mission and to invite
-      people to create public-interest infrastructure for the public — together.
+      The digital world is changing rapidly. Artificial intelligence can
+      generate content, operate software, interact with people and participate
+      in digital environments at an unprecedented scale.
     </p>
-
     <p>
-      You can help build UU simply by helping more people understand why
-      Human-Origin Infrastructure may need to exist. Whether you decide to
-      support our work, share UU and help build awareness, follow our journey,
-      contribute connections or expertise, or buy us a coffee — all contributions
-      are much appreciated.
+      As these capabilities grow, distinguishing human-origin participation
+      from automated or synthetic activity becomes increasingly important. This
+      is not simply a question of identifying bots. It is a broader question
+      about trust, human agency and the future relationship between people and
+      the digital systems around them.
     </p>
+    <p>How can digital environments recognize human-origin participation while respecting individual privacy?</p>
+    <p>How can we build trust without creating more centralized identity systems, surveillance mechanisms or databases of personal information?</p>
+    <p>And how can this infrastructure serve people across different platforms, communities and countries, rather than being controlled by a single ecosystem?</p>
+    <p>These are the questions that motivate Uniting Users.</p>
 
-    
-    <p class="subheading">
-      <em>The First UU OGs &amp; One Million Founding Supporters</em>
-    </p>
-
+    <h3>A new layer for the internet—not another platform</h3>
     <p>
-      The first 10,000 people who stand behind the mission will become the
-      First UU OGs — the earliest people who believed that this infrastructure
-      was worth helping to build.
+      UU is being developed as a complementary infrastructure layer that can
+      coexist with existing platforms and digital ecosystems. The ambition is
+      not to replace the services people use, but to explore a shared foundation
+      that can help distinguish human-origin participation across the wider internet.
     </p>
 
-    <p>
-      Our long-term goal is to build a community of 1,000,000 Founding Supporters
-      — because we calculated that 1 million coffee invites (donations) can help
-      make this infrastructure available.
-    </p>
-
-    <p>
-      Every one of the Founding Supporters will be part of the public record of
-      the journey as people who helped make UU possible.
-    </p>
-
-    <p>
-      If UU already resonates with you and you want to help us build it:
-    </p>
-
-    <a class="support-link"
-       href="https://donatr.ee/unitingusers"
-       target="_blank"
-       rel="noopener">
-      Support Our Work
-    </a>
-
-  </section>
-
-
-  <!-- LEARN MORE ABOUT UU -->
-
-  <section>
-
-    <h2 class="section-title">Learn More About UU</h2>
-
-    <p>
-      UU is a new concept, and we believe people should have the opportunity to
-      understand it before deciding whether they want to support it.
-    </p>
-
-    <p>
-      Our YouTube channel is being built as an open introduction to UU and the
-      thinking behind it. Through a series of UU Founder Monologues,
-      explanations, progress updates and deeper discussions, we will explore:
-    </p>
-
+    <p>The principles guiding this mission are:</p>
     <ul>
-      <li>What Human-Origin Infrastructure means</li>
-      <li>Why UU was created</li>
-      <li>The problem UU is addressing</li>
-      <li>How the architecture is designed</li>
-      <li>Why privacy and neutrality matter</li>
-      <li>What it means to build infrastructure for the public</li>
-      <li>Where UU is going</li>
-      <li>Weekly Q&amp;A sessions</li>
+      <li><strong>Human agency:</strong> Technology should serve people, not make authentic human participation increasingly difficult to distinguish.</li>
+      <li><strong>Privacy:</strong> Distinguishing human-origin participation should not require people to surrender their personal information.</li>
+      <li><strong>Neutrality:</strong> Infrastructure intended for the public should not depend on the interests of one platform or a single company.</li>
+      <li><strong>Permissionless participation:</strong> The infrastructure is intended to be open to participation across existing digital environments.</li>
+      <li><strong>Public interest:</strong> The long-term objective is to build infrastructure for people and the wider digital ecosystem, rather than an asset designed solely around private ownership.</li>
     </ul>
 
     <p>
-      Questions can be shared through the comments, where the community can ask,
-      challenge and better understand what we are building. The purpose of this
-      initiative is simple:
+      These are the principles guiding the development of UU. The protocol is
+      still in its pre-deployment phase, and the work required to turn this
+      vision into functioning, globally deployable infrastructure remains ahead.
     </p>
-
-    <p>
-      <em>Transparency before commitment. Understanding before participation.</em>
-    </p>
-
-    <p>
-      If, after learning about UU, you believe this journey is worth taking, we
-      invite you to support the progress and build it with us.
-    </p>
-
-    <p class="subheading">
-      <em>UU Human-Origin Channel</em>
-    </p>
-
-    <p>
-      <a href="https://www.youtube.com/@UUHumanOrigin"
-         target="_blank"
-         rel="noopener">
-        @UUHumanOrigin
-      </a>
-    </p>
-
   </section>
 
-
-  <!-- READ THE STORY OF UU -->
-
-  <section>
-
-    <h2 class="section-title">Read the Story of UU</h2>
+  <!-- JOIN THE MISSION -->
+  <section id="mission">
+    <h2 class="section-title">Join the UU Mission</h2>
+    <p class="subheading"><em>Inviting People to Build UU Together</em></p>
 
     <p>
-      UU did not appear overnight. The current protocol emerged from years of
-      research, development, experimentation and architectural exploration.
-      The founder's journey — including the work, pivots, failures, discoveries
-      and experiences that ultimately led toward UU — is being documented in a book.
+      Infrastructure of this potential importance should not be a conversation
+      reserved for engineers, technology companies or investors. It is a
+      question that concerns everyone who uses the internet.
     </p>
-
-    <p class="subheading">
-      <em>Noteworthy Namelessness, Leading from Above</em>
-    </p>
-
     <p>
-      <a href="https://www.amazon.com/dp/B0HDQ8FM78"
-         target="_blank"
-         rel="noopener">
-        Pre-order here
-      </a>
+      The UU Mission begins with a simple idea: infrastructure intended to help
+      distinguish human-origin participation should be built with people and
+      for people.
     </p>
+    <p>
+      You do not need to be a technical expert to participate in this journey.
+      You can help by learning about the mission, asking questions, sharing the
+      idea with others, following the development of UU, contributing your
+      expertise or connections, or supporting the work financially if you are
+      in a position to do so.
+    </p>
+    <p>
+      Every person who helps others understand why Human-Origin Infrastructure
+      may matter can contribute to building awareness around the mission.
+    </p>
+    <p><em>Understanding before participation. Transparency before commitment. Building with people, for people.</em></p>
 
+    <h3>The First UU OGs and One Million Founding Supporters</h3>
+    <p>
+      The first 10,000 people who stand behind the mission are intended to become
+      the <strong>First UU OGs</strong>—the earliest supporters who believed that
+      this infrastructure was worth helping to build.
+    </p>
+    <p>The longer-term ambition is to bring together <strong>one million Founding Supporters</strong>.</p>
+    <p>
+      The idea behind this goal is straightforward: one million people each
+      making a small contribution—one coffee invitation—could help move the
+      project toward making this infrastructure available to the public.
+    </p>
+    <p>
+      The goal is not simply to raise money. It is to build a community of people
+      who understand why this work matters and want to help make it possible.
+    </p>
+    <p>
+      Every Founding Supporter will be part of the public story of how UU came
+      into existence and how the mission developed.
+    </p>
+    <p>If the mission resonates with you, you can help build awareness, join the community or contribute to the work.</p>
+
+    <div class="link-row">
+      <a class="support-link" href="https://oneofthe1m.com/" target="_blank" rel="noopener noreferrer">Join One of the 1M</a>
+      <a class="support-link" href="https://donatr.ee/unitingusers/" target="_blank" rel="noopener noreferrer">Support Our Work</a>
+    </div>
   </section>
 
+  <!-- WATCH -->
+  <section id="watch">
+    <h2 class="section-title">Watch UU</h2>
+    <p class="subheading"><em>Explore the mission through video</em></p>
 
-  <!-- UU MISSION UPDATES -->
+    <p>
+      The UU YouTube channel is being developed as an open introduction to
+      Uniting Users, the thinking behind Human-Origin Infrastructure and the
+      questions that led to this mission.
+    </p>
+    <p>
+      Through founder monologues, introductory explanations, progress updates
+      and deeper discussions, the channel will explore:
+    </p>
+    <ul>
+      <li>What Human-Origin Infrastructure means</li>
+      <li>Why UU was created</li>
+      <li>The problem UU is intended to address</li>
+      <li>How the architecture is being developed</li>
+      <li>Why privacy and neutrality matter</li>
+      <li>What it means to build infrastructure for the public</li>
+      <li>Where UU is going and what needs to happen next</li>
+      <li>Weekly Q&amp;A sessions where people can ask questions and discuss the mission</li>
+    </ul>
+    <p>
+      The intention is to make the mission accessible to people from different
+      backgrounds, whether they are encountering the idea for the first time or
+      want to understand it in greater depth.
+    </p>
+    <p>
+      Questions, thoughtful challenges and discussion are welcome. The aim is
+      to make space for people to learn about UU, consider its purpose and
+      follow its progress before deciding whether they want to participate.
+    </p>
+    <p><em>Transparency before commitment. Understanding before participation.</em></p>
+    <p>
+      If, after learning about UU, you believe this journey is worth taking,
+      we invite you to follow the progress and help build awareness.
+    </p>
+    <p><a href="https://www.youtube.com/@UUHumanOrigin" target="_blank" rel="noopener noreferrer">Visit the UU Human-Origin Channel — @UUHumanOrigin</a></p>
+  </section>
 
-  <section>
+  <!-- LISTEN -->
+  <section id="listen">
+    <h2 class="section-title">Listen to UU</h2>
+    <h3>Uniting Users | Human-Origin Infrastructure for the People</h3>
+    <p>
+      The UU podcast will offer another way to follow the mission, hear the
+      thinking behind it and explore the wider questions surrounding
+      human-origin participation and the future of the internet.
+    </p>
+    <p>
+      The podcast is intended to make these conversations accessible beyond the
+      technical community and to give people another way to engage with the
+      ideas, the journey and the people behind the work.
+    </p>
+    <p><strong>Listen and follow the journey on Spotify.</strong></p>
+    <p class="small-note">Spotify link to be added when the show URL is available.</p>
+  </section>
 
-    <h2 class="section-title">UU Mission Updates</h2>
+  <!-- READ -->
+  <section id="read">
+    <h2 class="section-title">Read and Explore</h2>
+    <h3>Books, ideas and the journey behind UU</h3>
+    <p>
+      Uniting Users did not emerge overnight. The mission is the result of a
+      longer journey of questions, research, experimentation, reflection and
+      architectural exploration.
+    </p>
+    <p>
+      The books below form part of the wider body of work associated with this
+      journey. Each has its own perspective and context, and readers can
+      explore them directly.
+    </p>
 
+    <h3>Revenge of the Digi Absence's Basilisk — When Being Human Became Something to Prove</h3>
+    <p><a href="https://a.co/d/0i3nWwOq" target="_blank" rel="noopener noreferrer">Read the book on Amazon</a></p>
+
+    <h3>The UU Timeline</h3>
+    <p><a href="https://a.co/d/0idWW3eR" target="_blank" rel="noopener noreferrer">Explore The UU Timeline on Amazon</a></p>
+
+    <h3>The Noteworthy Namelessness — Leading from Above</h3>
+    <p>A forthcoming book, available to pre-order on Amazon.</p>
+    <p><a href="https://a.co/d/017S0gKh" target="_blank" rel="noopener noreferrer">Pre-order on Amazon</a></p>
+
+    <h3>UU Mission Updates &amp; Newsletter</h3>
     <p>
       The UU Mission is being built in public. Subscribe to UU Mission Updates
       for progress updates every two weeks, announcements, milestones and
       important developments as the journey unfolds.
     </p>
-
-    <p class="subheading">
-      <em>Subscribe</em>
-    </p>
-
     <p>
-      <a href="https://substack.com/@uumission"
-         target="_blank"
-         rel="noopener">
-        UU Mission Updates on Substack
-      </a>
+      The newsletter is intended to provide a continuing record of the mission:
+      where the work stands, what is changing and what comes next.
     </p>
-
+    <p>Subscribe to receive updates directly and stay connected with the development of UU.</p>
+    <p><a href="https://uumission.substack.com/" target="_blank" rel="noopener noreferrer">Subscribe to UU Mission Updates on Substack</a></p>
   </section>
 
-
-  <!-- FOUNDING SUPPORTER JOURNEY -->
-
-  <section>
-
-    <h2 class="section-title">The Founding Supporter Journey</h2>
-
-    <p class="subheading">
-      <em>Help Us Build the Foundation</em>
+  <!-- COMMUNITY -->
+  <section id="community">
+    <h2 class="section-title">Join the Community</h2>
+    <p class="subheading"><em>Help more people discover the mission</em></p>
+    <p>
+      UU is a journey that will take time, commitment and the participation of
+      people who believe that a more trustworthy digital environment is worth
+      working toward.
     </p>
+    <p>
+      You can follow updates, join the community, share the mission with others
+      or help connect UU with people whose experience, expertise or support may
+      be valuable.
+    </p>
+    <p>
+      You do not need to contribute money to help spread awareness. Learning
+      about the mission, asking questions and sharing the conversation are
+      meaningful ways to participate.
+    </p>
+    <p><em>One mission. Built with people. For people.</em></p>
+    <ul>
+      <li><strong>One of the 1M:</strong> <a href="https://oneofthe1m.com/" target="_blank" rel="noopener noreferrer">Join the Founding Supporter community</a></li>
+      <li><strong>Telegram:</strong> <a href="https://t.me/UnitingUsers" target="_blank" rel="noopener noreferrer">Join Uniting Users on Telegram</a></li>
+      <li><strong>X (Twitter):</strong> <a href="https://x.com/UUHumanOrigin" target="_blank" rel="noopener noreferrer">Follow @UUHumanOrigin</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anita-lukacsova/" target="_blank" rel="noopener noreferrer">Connect with Anita</a></li>
+    </ul>
+    <p>Follow the journey, share the mission and help more people understand why Human-Origin Infrastructure may matter.</p>
+  </section>
 
+  <!-- SUPPORT -->
+  <section id="support">
+    <h2 class="section-title">Support the Work</h2>
+    <h3>Help make Human-Origin Infrastructure possible</h3>
+    <p>
+      Uniting Users is an independent public initiative with the ambition to
+      build Human-Origin Infrastructure for the AI era.
+    </p>
+    <p>
+      Bringing this work from research and architecture toward deployment
+      requires resources, sustained effort and the right people and partners.
+      Support helps advance the work needed to make the mission possible,
+      including research, engineering, security, infrastructure, legal work
+      and future deployment.
+    </p>
+    <p>
+      Every contribution, regardless of size, can help move UU closer to its
+      objective of becoming public-interest infrastructure designed for people.
+    </p>
+    <p>
+      You can support the mission through a contribution, share the project with
+      others or help connect UU with people who may be able to contribute
+      expertise, resources or strategic support.
+    </p>
+    <p>Thank you to everyone who chooses to help make this work possible.</p>
+    <p><a class="support-link" href="https://donatr.ee/unitingusers/" target="_blank" rel="noopener noreferrer">Support Uniting Users</a></p>
+  </section>
+
+  <!-- FOUNDER VIDEO -->
+  <section id="welcome">
+    <h2 class="section-title">A Welcome from Anita</h2>
+    <h3>Why I Started This Journey</h3>
+    <div class="video-placeholder" aria-label="Founder video placeholder">
+      <strong>Welcome video coming soon</strong>
+      Anita’s welcome video will be added here.
+    </div>
+    <p>
+      Anita, founder of Uniting Users, will share the questions that led to UU,
+      why distinguishing human-origin participation matters and the vision
+      behind Human-Origin Infrastructure.
+    </p>
+    <p>
+      This will be an opportunity to hear directly from the founder about the
+      purpose of UU, the journey behind the mission and why this is a
+      conversation that belongs to all of us.
+    </p>
+  </section>
+
+  <!-- PHILANTHROPIC AND MISSION-ALIGNED CAPITAL -->
+  <section id="capital">
+    <h2 class="section-title">Philanthropic &amp; Mission-Aligned Capital</h2>
+    <h3>Help accelerate the mission</h3>
+    <p>
+      Our mission is to build UU with people, as public-interest infrastructure
+      for the people, guided by the principles of neutrality and privacy.
+    </p>
+    <p>
+      We believe infrastructure of this nature deserves to be considered beyond
+      the conventional model of a privately owned commercial platform. At the
+      same time, turning the vision into functioning infrastructure requires
+      resources, technical development and long-term commitment.
+    </p>
+    <p>
+      We welcome conversations with philanthropic contributors and
+      mission-aligned or conviction-capital partners who believe that
+      Human-Origin Infrastructure should exist and want to help accelerate its
+      development, earlier market entry and potential global deployment.
+    </p>
+    <p>
+      For those interested in learning more about the work, arranging a
+      presentation or discussing how they might help advance the mission,
+      Anita can be reached directly. A preview of the UU Architecture &amp;
+      Technical Library may also be requested by contacting the founder.
+    </p>
+    <p><strong>Contact the founder:</strong> <a href="mailto:founder@uu-trust.org">founder@uu-trust.org</a></p>
+  </section>
+
+  <!-- FOLLOW THE JOURNEY -->
+  <section id="follow">
+    <h2 class="section-title">Follow the Journey</h2>
+    <p>
+      UU is a work in progress, and we welcome respectful questions from people
+      who simply want to understand what we are doing.
+    </p>
+    <p>
+      Founding Supporter questions, community enquiries and conversations with
+      people interested in the mission are welcome.
+    </p>
+    <p>
+      You can stay connected through the newsletter and social channels, ask
+      questions through the YouTube community and follow developments as the
+      work progresses.
+    </p>
+    <ul>
+      <li><a href="https://www.youtube.com/@UUHumanOrigin" target="_blank" rel="noopener noreferrer">YouTube — UU Human-Origin Channel</a></li>
+      <li><a href="https://uumission.substack.com/" target="_blank" rel="noopener noreferrer">UU Mission Updates — Substack</a></li>
+      <li><a href="https://t.me/UnitingUsers" target="_blank" rel="noopener noreferrer">Telegram — Uniting Users</a></li>
+      <li><a href="https://x.com/UUHumanOrigin" target="_blank" rel="noopener noreferrer">X — @UUHumanOrigin</a></li>
+      <li><a href="https://www.linkedin.com/in/anita-lukacsova/" target="_blank" rel="noopener noreferrer">LinkedIn — Connect with Anita</a></li>
+    </ul>
+  </section>
+
+  <!-- FOUNDING SUPPORTER COUNTERS: STATIC VALUES FROM THE CURRENT WEBSITE -->
+  <section id="founding-supporters">
+    <h2 class="section-title">The Founding Supporter Journey</h2>
+    <p class="subheading"><em>Help Us Build the Foundation</em></p>
     <div class="supporter-stats">
-
       <div class="stat">
         <div class="stat-label">Founding Supporters</div>
         <div class="stat-number">0 / 1,000,000</div>
       </div>
-
       <div class="stat">
         <div class="stat-label">UU OGs</div>
         <div class="stat-number">0 / 10,000</div>
       </div>
-
     </div>
-
     <p>
       Every person who chooses to stand behind UU becomes part of the story of
       how this infrastructure came into existence.
     </p>
-
-    <p>
-      If our work resonates with you and you would like to contribute:
-    </p>
-
-    <a class="support-link"
-       href="https://donatr.ee/unitingusers"
-       target="_blank"
-       rel="noopener">
-      Support UU
-    </a>
-
+    <p>If our work resonates with you and you would like to contribute:</p>
+    <p><a class="support-link" href="https://donatr.ee/unitingusers/" target="_blank" rel="noopener noreferrer">Support UU</a></p>
   </section>
 
-
-  <!-- PHILANTHROPIC CONTRIBUTIONS -->
-
-  <section>
-
-    <h2 class="section-title">
-      Philanthropic &amp; Mission-Aligned Contributions
-    </h2>
+  <!-- PRIOR WORK AND PROTOCOL: INTENTIONALLY AT THE BOTTOM -->
+  <section class="prior-work" id="prior-work">
+    <h2 class="section-title">Explore the Work Behind UU</h2>
+    <p><em>For readers who want to explore the history, earlier research and public protocol materials behind the mission.</em></p>
 
     <p>
-      <em>
-        Our mission is to build UU with the people, without ownership,
-        as public-interest infrastructure for the people.
-      </em>
+      Uniting Users is the outcome of an extensive period of research,
+      development, experimentation and architectural exploration.
     </p>
-
     <p>
-      We believe that infrastructure of this nature should not be created solely
-      around commercial ownership. At the same time, bringing UU into the world
-      requires resources.
+      Between 2018 and 2025, prior research and development took place under
+      LinksUU Technology Solutions Ltd in the UK. This seven-year period
+      involved multiple projects, approaches and architectural pivots,
+      providing the research foundation from which the current UU architecture emerged.
     </p>
-
     <p>
-      If you believe Human-Origin Infrastructure should exist — and want to help
-      accelerate its development, earlier market entry and global deployment —
-      we welcome conversations with mission-aligned philanthropic and
-      conviction-capital contributors.
+      The prior work remains part of the history of how UU came to exist.
+      UU Protocol formally launched as a protocol direction in 2026, and the
+      current public specification is in its pre-deployment phase. The
+      published materials are available for transparency, research and
+      technical discussion.
     </p>
-
     <p>
-      To understand the architecture and technical work in greater depth, a
-      preview of the UU Architecture &amp; Technical Library can be requested here:
+      These materials provide additional context for readers who wish to go
+      deeper. They are available alongside the public-facing mission so that
+      people can choose the level of detail they want to explore.
     </p>
 
+    <h3>UU Protocol — Public Specification</h3>
+    <p>The current protocol direction, architecture and public protocol materials.</p>
+    <p><a href="https://uu-protocol.org/" target="_blank" rel="noopener noreferrer">Explore uu-protocol.org</a></p>
+
+    <h3>LinksUU Technology Solutions — Prior R&amp;D, 2018–2025</h3>
     <p>
-      <a href="mailto:founder@uu-trust.org">
-        founder@uu-trust.org
-      </a>
+      The earlier research and development initiative whose work provided the
+      foundation for the current UU direction.
     </p>
+    <p><a href="https://linksuu.org/" target="_blank" rel="noopener noreferrer">Explore linksuu.org</a></p>
 
+    <h3>UU Protocol — Research &amp; Technical Writing</h3>
+    <p>Further writing on Human-Origin Proofs, privacy-preserving infrastructure and the Human-Origin Layer for the internet.</p>
+    <p><a href="https://uuprotocol.substack.com/" target="_blank" rel="noopener noreferrer">Read UU Protocol on Substack</a></p>
   </section>
-
-
-  <!-- CONTACT & COMMUNITY -->
-
-  <section>
-
-    <h2 class="section-title">Contact &amp; Community</h2>
-
-    <p>
-      As UU is still in the process of being built, we welcome respectful
-      questions from people who simply want to understand what we are doing.
-    </p>
-
-    <p>
-      Founding Supporter questions and queries are welcome, as are friendly
-      conversations with people interested in the mission.
-    </p>
-
-    <p class="subheading">
-      <em>Follow the Journey</em>
-    </p>
-
-    <p>
-      For announcements, progress and updates:
-    </p>
-
-    <p>
-      <a href="https://whatsapp.com/channel/0029VbDPnd2EawdrxqGret2W"
-         target="_blank"
-         rel="noopener">
-        WhatsApp Channel — Uniting Users
-      </a>
-    </p>
-
-    <p>
-      <a href="https://t.me/UnitingUsers"
-         target="_blank"
-         rel="noopener">
-        Telegram — Uniting Users
-      </a>
-    </p>
-
-  </section>
-
-
-  <!-- PRIOR R&D -->
-
-  <section>
-
-    <h2 class="section-title">
-      Prior R&amp;D, Research &amp; the UU Protocol
-    </h2>
-
-    <p>
-      UU is the result of an extensive period of research, development and
-      experimentation. Between 2018 and 2025, prior R&amp;D was conducted under
-      LinksUU Technology Solutions Ltd, UK, across multiple projects, approaches
-      and architectural pivots.
-    </p>
-
-    <p>
-      That seven-year period provided the experimental and research foundation
-      from which the current UU architecture emerged.
-    </p>
-
-    <p>
-      UU Protocol formally launched as a protocol direction in 2026.
-    </p>
-
-    <p>
-      The prior R&amp;D remains part of the history of how UU came to exist.
-    </p>
-
-    <p class="subheading">
-      <em>UU Protocol</em>
-    </p>
-
-    <p>
-      The current protocol direction, architecture and protocol materials:
-    </p>
-
-    <p>
-      <a href="https://uu-protocol.org"
-         target="_blank"
-         rel="noopener">
-        uu-protocol.org
-      </a>
-    </p>
-
-    <p class="subheading">
-      <em>Research &amp; Technical Writing</em>
-    </p>
-
-    <p>
-      Research, technical thinking and the continuing development of the
-      Human-Origin Infrastructure concept:
-    </p>
-
-    <p>
-      <a href="https://uuprotocol.substack.com"
-         target="_blank"
-         rel="noopener">
-        uuprotocol.substack.com
-      </a>
-    </p>
-
-    <p class="subheading">
-      <em>Prior R&amp;D</em>
-    </p>
-
-    <p>
-      LinksUU Technology Solutions Ltd, UK
-    </p>
-
-    <p>
-      The company under which the preceding seven years of research, development,
-      experimentation and architectural exploration were conducted.
-    </p>
-
-    <p>
-      <a href="https://linksuu.org"
-         target="_blank"
-         rel="noopener">
-        linksuu.org
-      </a>
-    </p>
-
-  </section>
-
-
-  <!-- FOOTER -->
 
   <footer>
-
-    <p class="footer-title">
-      UU | Human-Origin Infrastructure
-    </p>
-
-    <p class="footer-subtitle">
-      <em>Privacy-preserving. Permissionless. Neutral. Public-interest. For the people.</em>
-    </p>
-
-    <p class="copyright">
-      &copy; 2026 Uniting Users (UU)
-    </p>
-
+    <p class="footer-title">Uniting Users (UU) | Human-Origin Infrastructure</p>
+    <p class="footer-subtitle"><em>Privacy-preserving. Permissionless. Neutral. Public-interest. For the people.</em></p>
+    <p class="copyright">&copy; 2026 Uniting Users (UU)</p>
   </footer>
 
 </main>
-
 </body>
 </html>
