@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#000000">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <title>Uniting Users (UU) | Human-Origin Infrastructure for the People</title>
   <meta name="description" content="Uniting Users (UU) is a public-interest initiative working to build neutral, permissionless Human-Origin Infrastructure to help distinguish human-origin participation on the internet while preserving human agency and privacy.">
@@ -250,6 +250,20 @@
       html { scroll-behavior: auto; }
       *, *::before, *::after { transition: none !important; }
     }
+
+    /* UU Mission registration */
+    .mission-form { margin: 30px 0 34px; padding: 22px; border: 1px solid var(--line); }
+    .mission-form label { display: block; margin: 0 0 8px; font-size: 15px; }
+    .mission-form input[type="text"], .mission-form input[type="email"] {
+      display: block; width: 100%; margin: 0 0 18px; padding: 12px;
+      border: 1px solid #777; border-radius: 0; background: #000; color: #fff; font: inherit;
+    }
+    .mission-form .consent-row { display: flex; align-items: flex-start; gap: 10px; margin: 18px 0; }
+    .mission-form .consent-row input { margin-top: 6px; flex: 0 0 auto; }
+    .mission-form button { padding: 11px 18px; border: 1px solid #fff; background: #fff; color: #000; font: inherit; cursor: pointer; }
+    .mission-form button:disabled { opacity: 0.6; cursor: wait; }
+    .form-message { margin: 16px 0 0; color: var(--muted); }
+
   </style>
 </head>
 
@@ -316,6 +330,7 @@
       <a href="https://oneofthe1m.com/" target="_blank" rel="noopener noreferrer">Join One of the 1M</a>
     </div>
   </header>
+
   <!-- WHY HUMAN-ORIGIN INFRASTRUCTURE -->
   <section id="why">
     <h2 class="section-title">Why Human-Origin Infrastructure?</h2>
@@ -337,7 +352,6 @@
     <p>And how can this infrastructure serve people across different platforms, communities and countries, rather than being controlled by a single ecosystem?</p>
     <p>These are the questions that motivate Uniting Users.</p>
 
-    
     <h3>A new layer for the internet—not another platform</h3>
     <p>
       UU is being developed as a complementary infrastructure layer that can
@@ -361,8 +375,7 @@
       vision into functioning, globally deployable infrastructure remains ahead.
     </p>
   </section>
-
-  <!-- JOIN THE MISSION -->
+    <!-- JOIN THE MISSION -->
   <section id="mission">
     <h2 class="section-title">Join the UU Mission</h2>
     <p class="subheading"><em>Inviting People to Build UU Together</em></p>
@@ -390,10 +403,9 @@
     </p>
     <p><em>Understanding before participation. Transparency before commitment. Building with people, for people.</em></p>
 
-    
     <h3>The First UU OGs and One Million Founding Supporters</h3>
     <p>
-      The first 10,000 people who stand behind the mission are intended to become
+      The first 10,000 people who register as Founding Supporters will become
       the <strong>First UU OGs</strong>—the earliest supporters who believed that
       this infrastructure was worth helping to build.
     </p>
@@ -413,8 +425,28 @@
     </p>
     <p>If the mission resonates with you, you can help build awareness, join the community or contribute to the work.</p>
 
+    <div class="mission-form">
+      <h3>Register Your Support for the UU Mission</h3>
+      <p class="small-note">Add your name to the growing community following the UU Mission.</p>
+      <form id="uu-registration-form">
+        <label for="uu-full-name">Full name</label>
+        <input type="text" id="uu-full-name" name="full_name" autocomplete="name" maxlength="100" required>
+
+        <label for="uu-email">Email address</label>
+        <input type="email" id="uu-email" name="email" autocomplete="email" maxlength="254" required>
+
+        <label class="consent-row" for="uu-consent">
+          <input type="checkbox" id="uu-consent" name="consent" required>
+          <span>I consent to UU processing my name and email address to record my registration for the UU Mission.</span>
+        </label>
+
+        <button type="submit" id="uu-submit-button">Join the UU Mission</button>
+        <p class="form-message" id="uu-form-message" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
     <div class="link-row">
-      <a class="support-link" href="https://oneofthe1m.com/" target="_blank" rel="noopener noreferrer">Join One of the 1M</a>
+      <a class="support-link" href="https://oneofthe1m.com/" target="_blank" rel="noopener noreferrer">Visit the One of the 1M Store</a>
       <a class="support-link" href="https://donatr.ee/unitingusers/" target="_blank" rel="noopener noreferrer">Support Our Work</a>
     </div>
   </section>
@@ -475,21 +507,18 @@
       technical community and to give people another way to engage with the
       ideas, the journey and the people behind the work.
     </p>
-<section>
-  <p><strong>Listen to UU | Human-Origin Infrastructure for the People</strong></p>
-  
-<p class="small-note">
-  Listen on
-  <a href="https://open.spotify.com/show/1l2fyiGkZPSw3T3gkwz5PD"
-     target="_blank" rel="noopener noreferrer">Spotify</a>
-  |
-  <a href="https://music.amazon.com/podcasts/6d1c806c-2d14-4057-8cb4-a371770173fc/uniting-users-human-origin-infrastructure-for-the-people"
-     target="_blank" rel="noopener noreferrer">Amazon Music</a>
-  |
-  <a href="https://podcasts.apple.com/us/podcast/uniting-users-human-origin-infrastructure-for-the-people/id6823288699"
-     target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
-</p>
-</section>
+    <section>
+      <p><strong>Listen to UU | Human-Origin Infrastructure for the People</strong></p>
+      <p class="small-note">
+        Listen on
+        <a href="https://open.spotify.com/show/1l2fyiGkZPSw3T3gkwz5PD" target="_blank" rel="noopener noreferrer">Spotify</a>
+        |
+        <a href="https://music.amazon.com/podcasts/6d1c806c-2d14-4057-8cb4-a371770173fc/uniting-users-human-origin-infrastructure-for-the-people" target="_blank" rel="noopener noreferrer">Amazon Music</a>
+        |
+        <a href="https://podcasts.apple.com/us/podcast/uniting-users-human-origin-infrastructure-for-the-people/id6823288699" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+      </p>
+    </section>
+  </section>
 
   <!-- READ -->
   <section id="read">
@@ -505,6 +534,9 @@
       journey. Each has its own perspective and context, and readers can
       explore them directly.
     </p>
+
+    <h3>UU | Proof of Human-Origin | The Missing Layer to the AI Internet</h3>
+    <p>Paper Download <a href="https://oneofthe1m.com/products/proof-of-human-origin-the-missing-layer-for-the-ai-internet" target="_blank" rel="noopener noreferrer">HERE</a></p>
 
     <h3>Revenge of the Digi Absence's Basilisk — When Being Human Became Something to Prove</h3>
     <p><a href="https://a.co/d/0i3nWwOq" target="_blank" rel="noopener noreferrer">Read the book on Amazon</a></p>
@@ -551,9 +583,10 @@
     </p>
     <p><em>One mission. Built with people. For people.</em></p>
     <ul>
-      <li><strong>One of the 1M:</strong> <a href="https://oneofthe1m.com/" target="_blank" rel="noopener noreferrer">Join the Founding Supporter community</a></li>
+      <li><strong>One of the 1M:</strong> <a href="https://oneofthe1m.com/" target="_blank" rel="noopener noreferrer">Visit the One of the 1M store</a></li>
       <li><strong>Telegram:</strong> <a href="https://t.me/UnitingUsers" target="_blank" rel="noopener noreferrer">Join Uniting Users on Telegram</a></li>
       <li><strong>X (Twitter):</strong> <a href="https://x.com/UUHumanOrigin" target="_blank" rel="noopener noreferrer">Follow @UUHumanOrigin</a></li>
+      <li><strong>X:</strong> <a href="https://x.com/AnitaLukacsova" target="_blank" rel="noopener noreferrer">Follow @AnitaLukacsova</a></li>
       <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anita-lukacsova/" target="_blank" rel="noopener noreferrer">Connect with Anita</a></li>
     </ul>
     <p>Follow the journey, share the mission and help more people understand why Human-Origin Infrastructure may matter.</p>
@@ -586,9 +619,7 @@
     <p>Thank you to everyone who chooses to help make this work possible.</p>
     <p><a class="support-link" href="https://donatr.ee/unitingusers/" target="_blank" rel="noopener noreferrer">Support Uniting Users</a></p>
   </section>
-
- 
-  <!-- FOUNDER VIDEO -->
+    <!-- FOUNDER VIDEO -->
   <section id="welcome">
     <h2 class="section-title">A Welcome from Anita</h2>
     <h3>Why I Started This Journey</h3>
@@ -623,7 +654,8 @@
       margin: 24px auto;
       aspect-ratio: 16 / 9;
       overflow: hidden;
-      border-radius: 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
       background: #000;
     }
 
@@ -632,6 +664,12 @@
       width: 100%;
       height: 100%;
       border: 0;
+    }
+
+    @media (max-width: 600px) {
+      #welcome .video-placeholder {
+        max-width: 100%;
+      }
     }
   </style>
 
@@ -685,22 +723,19 @@
       <li><a href="https://uumission.substack.com/" target="_blank" rel="noopener noreferrer">UU Mission Updates — Substack</a></li>
       <li><a href="https://t.me/UnitingUsers" target="_blank" rel="noopener noreferrer">Telegram — Uniting Users</a></li>
       <li><a href="https://x.com/UUHumanOrigin" target="_blank" rel="noopener noreferrer">X — @UUHumanOrigin</a></li>
+      <li><a href="https://x.com/AnitaLukacsova" target="_blank" rel="noopener noreferrer">X — @AnitaLukacsova</a></li>
       <li><a href="https://www.linkedin.com/in/anita-lukacsova/" target="_blank" rel="noopener noreferrer">LinkedIn — Connect with Anita</a></li>
     </ul>
   </section>
 
-  <!-- FOUNDING SUPPORTER COUNTERS: STATIC VALUES FROM THE CURRENT WEBSITE -->
+  <!-- FOUNDING SUPPORTER COUNTER -->
   <section id="founding-supporters">
     <h2 class="section-title">The Founding Supporter Journey</h2>
     <p class="subheading"><em>Help Us Build the Foundation</em></p>
     <div class="supporter-stats">
       <div class="stat">
         <div class="stat-label">Founding Supporters</div>
-        <div class="stat-number">0 / 1,000,000</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">UU OGs</div>
-        <div class="stat-number">0 / 10,000</div>
+        <div class="stat-number" id="uu-founding-supporter-count">0 / 1,000,000</div>
       </div>
     </div>
     <p>
@@ -762,5 +797,75 @@
   </footer>
 
 </main>
+
+<script>
+  (() => {
+    const supabaseBaseUrl = "https://lquuokipsdrrbrukclga.supabase.co";
+    const supabasePublishableKey = "sb_publishable_glyHSLGeliDttMuC8N8hzA_XYdP5t08";
+
+    const registrationForm = document.getElementById("uu-registration-form");
+    const submitButton = document.getElementById("uu-submit-button");
+    const formMessage = document.getElementById("uu-form-message");
+    const supporterCount = document.getElementById("uu-founding-supporter-count");
+
+    async function loadSupporterCount() {
+      if (!supporterCount) return;
+      try {
+        const response = await fetch(`${supabaseBaseUrl}/functions/v1/uumission-count`, {
+          method: "GET",
+          headers: { "apikey": supabasePublishableKey },
+          cache: "no-store"
+        });
+        if (!response.ok) throw new Error("Count request failed");
+        const result = await response.json();
+        if (result.ok && Number.isFinite(Number(result.count))) {
+          supporterCount.textContent = `${Number(result.count).toLocaleString("en-US")} / 1,000,000`;
+        }
+      } catch (error) {
+        console.error("UU supporter count could not be loaded:", error);
+      }
+    }
+
+    if (registrationForm) {
+      registrationForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const fullName = document.getElementById("uu-full-name").value.trim();
+        const email = document.getElementById("uu-email").value.trim();
+        const consent = document.getElementById("uu-consent").checked;
+
+        if (!consent) {
+          formMessage.textContent = "Please provide your consent before submitting.";
+          return;
+        }
+
+        submitButton.disabled = true;
+        formMessage.textContent = "Submitting your registration…";
+        try {
+          const response = await fetch(`${supabaseBaseUrl}/functions/v1/join-uumission`, {
+            method: "POST",
+            headers: {
+              "apikey": supabasePublishableKey,
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ full_name: fullName, email: email, consent: true })
+          });
+          const result = await response.json();
+          if (!response.ok || !result.ok) {
+            throw new Error(result.message || "Registration could not be completed.");
+          }
+          formMessage.textContent = "Thank you. Your registration for the UU Mission has been received.";
+          registrationForm.reset();
+          await loadSupporterCount();
+        } catch (error) {
+          formMessage.textContent = error.message || "Something went wrong. Please try again.";
+        } finally {
+          submitButton.disabled = false;
+        }
+      });
+    }
+    loadSupporterCount();
+  })();
+</script>
+
 </body>
 </html>
